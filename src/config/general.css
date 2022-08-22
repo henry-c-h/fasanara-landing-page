@@ -1,0 +1,120 @@
+/* 
+--- typograpgy
+
+font sizes in px
+10/12/14/16/18/20/24/30/36/44/52/62/74/86/98
+
+font weights
+400/500/700
+
+line heights
+1.8
+
+--- shadows
+0 2px 12px rgba(0, 0, 0, 0.5)
+
+--- border radius
+
+
+--- spacing in px
+2/4/8/12/16/24/32/48/64/80/96/128
+
+
+--- images & videos
+https://www.pexels.com/video/man-using-a-touchscreen-monitor-7579959/
+https://www.pexels.com/photo/man-looking-at-a-screen-with-stock-market-data-8353793/
+https://www.pexels.com/photo/man-in-black-suit-standing-in-front-of-black-monitor-7567440/
+https://unsplash.com/photos/cV8BIJolid4
+https://www.pexels.com/photo/women-sitting-in-the-office-7433846/
+https://www.pexels.com/photo/an-artificial-intelligence-illustration-on-the-wall-8849295/
+https://www.pexels.com/photo/gold-bitcoin-coin-on-background-of-growth-chart-7788009/
+ */
+
+:root {
+  --color-primary: #1a008e;
+  --color-primary-dark: #100055;
+  --color-secondary: #43008f;
+  --color-primary-medium: #4833a5;
+  --color-primary-light: #d1cce8;
+  --color-grey-dark: #191919;
+  --color-grey-medium: #bababa;
+  --color-grey-light: #f7f7f7;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Albert Sans', sans-serif;
+  font-weight: 400;
+  color: var(--color-grey-dark);
+  /* line-height: 1.6; */
+}
+
+.heading-primary {
+  font-size: 4.4rem;
+  font-weight: 700;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  margin-bottom: 2.4rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  transition: all 0.3s;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn--dark:hover,
+.btn--dark:active {
+  background-color: var(--color-primary);
+  color: var(--color-primary-light);
+}
+
+.btn--dark {
+  background-color: transparent;
+  color: var(--color-grey-dark);
+  border: 2px solid var(--color-primary);
+}
+
+.btn--light {
+  background-color: transparent;
+  color: var(--color-grey-light);
+  border: 2px solid var(--color-grey-light);
+}
+
+.btn--light:hover {
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary-light);
+}
+
+.section {
+  max-width: 130rem;
+  padding: 9.6rem 4.8rem;
+  margin: 0 auto;
+}
+
+.btn--small {
+  padding: 1.2rem 2.4rem !important;
+  font-size: 1.6rem !important;
+}

@@ -1,0 +1,144 @@
+.feature-wrapper {
+  background-color: var(--color-grey-light);
+  background-image: linear-gradient(
+      rgba(247, 247, 247, 0.9),
+      rgba(247, 247, 247, 0.9)
+    ),
+    url(../../assets/logo.png);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.section-features__heading {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.feature-container {
+  position: relative;
+  min-height: 32rem;
+  overflow: hidden;
+}
+
+.feature-container__arrow {
+  border: none;
+  position: absolute;
+  font-size: 3rem;
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  color: var(--color-grey-light);
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.feature-container__arrow--left {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.feature-container__arrow--right {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.feature-card {
+  padding: 4.8rem 0;
+  width: 80%;
+  display: flex;
+  gap: 3.2rem;
+  box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.07);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.3s;
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-grey-light);
+}
+
+.feature-card__img-container {
+  display: flex;
+  align-items: center;
+}
+
+.feature-card__img {
+  display: block;
+  width: 30rem;
+  transform: scale(1.2) translateX(-3rem);
+  transform-origin: left;
+}
+
+.feature-card__content {
+  padding: 3.2rem;
+  font-size: 1.8rem;
+}
+
+.feature-card__title {
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.feature-card__text {
+  line-height: 1.6;
+}
+
+.section_features__dots {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  margin-top: 3.2rem;
+}
+
+.dot {
+  border: 2px solid var(--color-primary);
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.dot:hover {
+  background-color: var(--color-primary-light);
+}
+
+.dot--active {
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 62em) {
+  .feature-container {
+    min-height: 40rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .feature-card {
+    flex-direction: column;
+    justify-content: space-around;
+    left: 48.5%;
+    padding: 0;
+    gap: 0;
+  }
+
+  .feature-container {
+    min-height: 75rem;
+  }
+
+  .feature-card__img {
+    width: 100%;
+    transform: scale(1);
+  }
+}

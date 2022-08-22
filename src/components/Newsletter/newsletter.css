@@ -1,0 +1,46 @@
+.newsletter-wrapper {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+}
+
+.newsletter {
+  text-align: center;
+  color: var(--color-grey-light);
+}
+
+.newsletter__text {
+  font-size: 1.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.newsletter__input {
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  display: inline-block;
+  margin-right: 1.8rem;
+  outline: none;
+  font-family: inherit;
+  border: 2px solid var(--color-primary-light);
+  background-color: transparent;
+  color: var(--color-grey-light);
+  width: 30%;
+}
+
+.newsletter__input::placeholder {
+  color: var(--color-grey-light);
+}
+
+.btn--signup {
+  cursor: pointer;
+  font-weight: 500;
+  background-color: var(--color-grey-light);
+  color: var(--color-primary);
+}
+
+.btn--signup:hover {
+  background-color: var(--color-primary-medium);
+  border: 2px solid var(--color-primary-medium);
+}
